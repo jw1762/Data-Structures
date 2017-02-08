@@ -1,2 +1,2 @@
 # MyTemp
-Edit of MyTemp.
+This is my competing edit.
