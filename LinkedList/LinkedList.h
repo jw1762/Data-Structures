@@ -9,6 +9,7 @@ class node
      ~Student();
      
      //Methods
+     void display(); //Outputs the list.
      int size(); //returns number of data elements in list
      bool empty(); - //bool returns true if empty
      int value_at(index); - //returns the value of the nth item (starting at 0 for first
@@ -29,4 +30,5 @@ class node
     node *next;//next node ptr
     node *head;//Head Ptr
 };
-#endif 
+
+#endif

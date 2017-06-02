@@ -15,28 +15,67 @@ LinkedList::~LinkedList()
   
 }
 
+void LinkedList::display()
+{
+	ptr = head;
+	while (ptr)
+	{
+		std::cout << ptr->value << endl;
+		ptr = ptr->next;
+	}
+}
+
 int LinkedList::size() //returns number of data elements in list
 {
-   
+	size = 0;
+	ptr = head;
+	while (ptr)
+	{
+		size++;
+		ptr = ptr->next;				
+	}
+	return size;
 } 
  
 bool LinkedList::empty() //bool returns true if empty
 {
-  if(!head)
-  {
-    return true;
-  }
-  else
-    return false;
+	if(!head)
+	{
+		return true;
+	}
+	else
+		return false;
 } 
  
-value_at(index){} //returns the value of the nth item (starting at 0 for first)
+value_at(index) //returns the value of the nth item (starting at 0 for first)
+{
+	int i = 0;
+	ptr = head;
+	while (ptr)
+	{
+		if (index == i)
+		{
+			return value;
+		}
+		ptr = ptr->next;
+		i++;
+	}
+}
  
-push_front(value){} //adds an item to the front of the list
+push_front(value) //adds an item to the front of the list
+{
+		
+} 
  
-pop_front(){} //remove front item and return its value
+pop_front()//remove front item and return its value
+{
+	
+} 
  
-push_back(value){} //adds an item at the end
+push_back(value) //adds an item at the end
+{
+	
+} 
  
 pop_back(){} //removes end item and returns its value
  
